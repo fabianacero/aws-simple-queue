@@ -59,7 +59,7 @@ public class AWSQueue {
             responseQueueCreation.append("Your Queue already exists:\n");
             ListQueuesResult queueList = sqs.listQueues();
             for (String url : queueList.getQueueUrls()) {
-                responseQueueCreation.append(url + "\n");
+                responseQueueCreation.append(url + "<br />");
             }
             System.out.println(responseQueueCreation);
         }
