@@ -32,6 +32,15 @@ public class AWSQueue {
     }
 
     /**
+     * Help para verificar el estado del service
+     * @return
+     */
+    @RequestMapping("/health")
+    public boolean health(){
+        return true;
+    }
+
+    /**
      * Crea una cola desde AWS
      */
     @RequestMapping("/create/{queueName}")

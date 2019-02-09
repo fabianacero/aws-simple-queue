@@ -11,8 +11,4 @@ public class SimpleQueue {
         SpringApplication.run(SimpleQueue.class, args);
     }
 
-    @RequestMapping("/health")
-    public boolean health(){
-        return true;
-    }
 }
